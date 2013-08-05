@@ -9,7 +9,6 @@ class BrowserController < ApplicationController
 
     sse = Reloader::SSE.new(response.stream)
 
-    debugger
     begin
       directories = [
         File.join(Rails.root, 'app', 'assets'),
